@@ -23,6 +23,7 @@ public class AddressActivity extends Activity {
     private final String TAG = "调试AddressActivity";
     private EditText etNumber;
     private TextView tvResult;
+    private String ss;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
