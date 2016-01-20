@@ -24,6 +24,8 @@ public class AddressActivity extends Activity {
     private EditText etNumber;
     private TextView tvResult;
     private String ss;
+    private String sss;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
