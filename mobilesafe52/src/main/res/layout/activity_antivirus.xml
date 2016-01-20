@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+
+    >
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="病毒查杀" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_scanner_malware" />
+
+            <ImageView
+                android:id="@+id/iv_antivirus_scanning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/act_scanning_03" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8核杀毒引擎" />
+
+            <ProgressBar
+                android:id="@+id/pb_antivirus_scanning_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/tv_antivirus_scanning_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已经扫描了20个软件，发现病毒1个"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="999">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_antivirus_scanning_detail"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="XX.XXX.XXX.XXX 安全 \nXX.XXX.XXX.XXX 安全" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="@color/black"
+            android:id="@+id/bt_antivirus_begin_scanning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green_normal"
+            android:text="开始"
+            android:textSize="22sp" />
+
+        <Button
+            android:textColor="@color/black"
+            android:id="@+id/bt_antivirus_stop_scanning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green_normal"
+            android:text="终止"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

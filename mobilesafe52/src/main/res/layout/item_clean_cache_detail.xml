@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_clean_cache_icon"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_weight="111"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_clean_cache_app_name"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="垃圾"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/tv_clean_cache_size"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缓存:4KB"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_clean_cache_clear"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@mipmap/aq"
+        />
+</LinearLayout>

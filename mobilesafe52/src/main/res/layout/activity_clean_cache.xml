@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.joey.mobilesafe52.activity.CleanCacheActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="缓存清理" />
+
+    <TextView
+        android:id="@+id/tv_clean_cache_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1款软件有缓存，共4KB"
+        android:textColor="@color/black" />
+
+    <ListView
+        android:id="@+id/lv_clean_cache_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:joey="http://com.joey.mobilesafe52"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="进程管理设置" />
+
+    <com.joey.mobilesafe52.view.SettingItemView
+        android:id="@+id/siv_is_show_system_process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        joey:desc_off="不显示"
+        joey:desc_on="显示"
+        joey:itemTitle="显示系统进程" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <com.joey.mobilesafe52.view.SettingItemView
+        android:id="@+id/siv_is_kill_process_on_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        joey:desc_off="关闭"
+        joey:desc_on="开启"
+        joey:itemTitle="定时清理进程" />
+
+    <com.joey.mobilesafe52.view.SettingClickView
+        android:id="@+id/scv_kill_process_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        joey:itemTitle="定时清理进程" />
+
+</LinearLayout>

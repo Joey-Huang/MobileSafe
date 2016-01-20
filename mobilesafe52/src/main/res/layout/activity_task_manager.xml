@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.joey.mobilesafe52.activity.TaskManagerActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="进程管理" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_task_process_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="运行中进程6个"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_task_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="剩余/总内存：200M/500M"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_weight="111"
+        android:id="@+id/ll_pb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <ListView
+            android:id="@+id/lv_task_manager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="111" />
+        <LinearLayout
+            android:id="@+id/ll_task_loading"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ProgressBar
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在重新加载..." />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_task_process_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户进程"/>
+    </FrameLayout>
+    <LinearLayout
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/bt_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="全选"
+            android:background="@drawable/btn_light_green_selector"/>
+
+        <Button
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/bt_select_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="反选"
+            android:background="@drawable/btn_light_green_selector"/>
+
+        <Button
+            android:id="@+id/bt_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清理"
+            android:background="@drawable/btn_light_green_selector"/>
+
+        <Button
+            android:id="@+id/bt_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="设置"
+            android:background="@drawable/btn_light_green_selector"/>
+    </LinearLayout>
+</LinearLayout>
+
+
